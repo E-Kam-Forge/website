@@ -1,1 +1,130 @@
-initial
+# EkamForge Website
+
+EkamForge is a multi-page marketing and portfolio website for the EkamForge engineering team, the B2B engineering arm of the UrbanBlend ecosystem. The site presents the team's capabilities in custom ERPs, mobile and web products, applied AI, embedded QA, IoT, and hardware-to-cloud systems.
+
+## What the website includes
+
+- A responsive landing page introducing EkamForge and its engineering approach.
+- Services overview covering:
+  - Custom ERPs and multi-tenant SaaS
+  - Mobile and web product engineering
+  - Hardware-to-cloud IoT and physical AI
+  - Applied AI, voice agents, and embedded QA
+- Portfolio pages for products and projects such as AquaMinder, SchoolSense, OneRoom, Opti-Rider, CASSI-Lite, and FrontDesk AI.
+- Pricing page with service packages and engagement information.
+- About page describing the six-member engineering team, UrbanBlend ecosystem, patents, publications, and delivery metrics.
+- Interactive project calculator for estimating engagement requirements.
+- Contact page with enquiry and contact details.
+- Privacy policy page.
+- Shared responsive navigation, footer, branding, icons, and page-transition scroll behavior.
+
+## Technology
+
+- React 18
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Lucide React icons
+- PostCSS and Autoprefixer
+
+The project is currently a frontend-only website. Company information, services, products, research, and team content are maintained in typed TypeScript data modules under `src/data`.
+
+## Pages and routes
+
+| Route | Purpose |
+| --- | --- |
+| `/` | Home page and company overview |
+| `/services` | Service pillars, technical approach, and proof of work |
+| `/pricing` | Engagement packages and pricing information |
+| `/about` | Team, company story, ecosystem, and metrics |
+| `/calculator` | Interactive project estimation calculator |
+| `/contact` | Contact and enquiry information |
+| `/privacy` | Privacy policy |
+
+Unknown routes fall back to the home page.
+
+## Project structure
+
+```text
+.
+├── public/                 # Static logos, favicons, and team images
+├── src/
+│   ├── components/         # Shared navigation, footer, logo, and slideshow
+│   ├── data/               # Company, product, service, research, and team content
+│   ├── pages/              # Route-level page components
+│   ├── App.tsx             # Router and application shell
+│   ├── index.css           # Global styles and Tailwind layers
+│   ├── main.tsx            # Application entry point
+│   └── types.ts            # Shared TypeScript types
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## Requirements
+
+- Node.js 18 or newer
+- npm
+
+## Getting started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Vite will print the local URL, normally `http://localhost:5173`.
+
+## Available scripts
+
+```bash
+npm run dev      # Start the Vite development server
+npm run build    # Type-check and create a production build
+npm run preview  # Preview the production build locally
+```
+
+The production build is generated in `dist/`. Dependencies and build output are intentionally excluded from version control.
+
+## Updating website content
+
+Most marketing content can be updated without changing page layout:
+
+- Company identity, metrics, and ecosystem: `src/data/company.ts`
+- Products and portfolio projects: `src/data/products.ts`
+- Service pillars and technical details: `src/data/services.ts`
+- Research and publications: `src/data/research.ts`
+- Team information: `src/data/team.ts`
+
+Images and brand assets are stored in `public/`.
+
+## Build and verification
+
+Before publishing changes, run:
+
+```bash
+npm run build
+```
+
+This runs the TypeScript compiler and Vite production build, catching type errors and confirming that the application can be bundled successfully.
+
+## Repository
+
+The source code is maintained in the private GitHub repository:
+
+https://github.com/E-Kam-Forge/website
+
+## Contact
+
+Email: ekamforge@gmail.com
+
+GitHub organization: https://github.com/E-Kam-Forge
