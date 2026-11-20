@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0A1128"/>
+  <path d="M12 44C20 48 44 48 52 44" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 48C26 51 38 51 48 48" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+  <!-- E -->
+  <path d="M16 18H28M16 26H25M16 34H28M16 18V34" stroke="#93C5FD" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- F -->
+  <path d="M34 18H46M34 26H43M34 18V34" stroke="#3B82F6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- AI Sparkles -->
+  <path d="M46 12C46 14.5 48.5 15 48.5 15C48.5 15 46 15.5 46 18C46 15.5 43.5 15 43.5 15C43.5 15 46 14.5 46 12Z" fill="#F97316"/>
+  <path d="M52 17C52 18.5 53.5 19 53.5 19C53.5 19 52 19.5 52 21C52 19.5 50.5 19 50.5 19C50.5 19 52 18.5 52 17Z" fill="#60A5FA"/>
+  <path d="M42 9C42 10 43 10.5 43 10.5C43 10.5 42 11 42 12C42 11 41 10.5 41 10.5C41 10.5 42 10 42 9Z" fill="#FDBA74"/>
+</svg>
